@@ -165,3 +165,19 @@ footer.bottom { margin-top: 72px; padding: 36px 0 48px; background: var(--dark);
 footer.bottom a { color: var(--on-dark); text-decoration: none; }
 footer.bottom a:hover { color: var(--accent); }
 footer.bottom .links { display: flex; gap: 10px 22px; flex-wrap: wrap; margin-bottom: 14px; }
+
+/* ---------- Флаги и реальные цены ---------- */
+.flag { width: 30px; height: 20px; border-radius: 4px; box-shadow: 0 0 0 1px rgba(14,17,22,.12); flex: none; }
+.flag-h { display: flex; align-items: center; gap: 12px; }
+.ex-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 14px; }
+@media (max-width: 1000px) { .ex-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .ex-grid { grid-template-columns: 1fr; } }
+.ex-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow-sm); transition: transform .2s, box-shadow .2s; }
+.ex-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.ex-top { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.ex-date { margin-left: auto; font-weight: 500; }
+.ex-card h3 { font-size: 19px; margin: 14px 0 2px; line-height: 1.2; }
+.ex-card h3 span { color: var(--muted); font-weight: 600; }
+.ex-spec { margin: 0; font-size: 14px; color: var(--muted); }
+.ex-price { margin: 14px 0 0; font-size: 26px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.ex-note { margin: 0; font-size: 12px; color: var(--muted); }
