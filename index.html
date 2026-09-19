@@ -23,10 +23,60 @@
 
 <main class="wrap">
 
-<section class="hero">
+<section class="hero hero-home">
+ <div class="hero-text">
   <h1>Сколько выйдет авто из Китая, Кореи или Японии под ключ в 2026</h1>
   <p class="lead">Сейчас машина до 160 л.с. растамаживается с утильсбором 3 400 или 5 200 ₽, а мощнее — от 900 тыс. ₽. С 1 января 2027 эта ставка вырастет ещё на 10 %. Калькулятор покажет, куда попадает ваша машина, до того, как вы внесёте предоплату. А точную цену до вашего города пришлют сразу несколько компаний.</p>
   <ul class="badges"><li>Ставки ЕТТ для физлиц</li><li>Курс ЦБ на сегодня</li><li>Проверка порога 160 л.с.</li><li>Расчёты от 3 компаний бесплатно</li></ul>
+  <a class="btn btn-accent" href="#calc">Посчитать свою машину ↓</a>
+ </div>
+ 
+<div class="car-scene" aria-hidden="true">
+  <div class="route"><span>Везём</span><span class="route-words"><b>из Китая</b><b>из Кореи</b><b>из Японии</b></span><span>→ до вашего города</span></div>
+  <svg viewBox="0 0 520 260" role="img">
+    <defs>
+      <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#3a4252"/><stop offset=".55" stop-color="#1b2029"/><stop offset="1" stop-color="#0f1217"/>
+      </linearGradient>
+      <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#9fb4cc"/><stop offset="1" stop-color="#3d4a5c"/>
+      </linearGradient>
+      <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+        <stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="beam" cx="0" cy=".5" r="1">
+        <stop offset="0" stop-color="#fff6d6" stop-opacity=".9"/><stop offset="1" stop-color="#fff6d6" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <g class="road">
+      <rect x="0" y="228" width="520" height="4" rx="2" fill="#d7dce3"/>
+      <g class="dashes"><rect x="0" y="244" width="40" height="4" rx="2"/><rect x="90" y="244" width="40" height="4" rx="2"/><rect x="180" y="244" width="40" height="4" rx="2"/><rect x="270" y="244" width="40" height="4" rx="2"/><rect x="360" y="244" width="40" height="4" rx="2"/><rect x="450" y="244" width="40" height="4" rx="2"/><rect x="540" y="244" width="40" height="4" rx="2"/><rect x="630" y="244" width="40" height="4" rx="2"/></g>
+    </g>
+    <ellipse cx="265" cy="226" rx="230" ry="12" fill="url(#shadow)"/>
+    <g class="car">
+      <path class="beam" d="M466 158 L520 138 L520 188 Z" fill="url(#beam)"/>
+      <path d="M58 196 L56 158 Q58 140 78 132 L118 116 Q140 106 170 104 L292 100 Q312 100 326 110 L372 140 L446 150 Q466 154 470 170 L472 190 Q472 196 464 196 L434 196 A44 44 0 0 0 346 196 L186 196 A44 44 0 0 0 98 196 Z" fill="url(#body)"/>
+      <path d="M118 124 Q140 112 172 110 L204 109 L204 142 L110 142 Q108 132 118 124 Z" fill="url(#glass)"/>
+      <path d="M212 108 L288 106 Q304 106 316 114 L352 140 L212 142 Z" fill="url(#glass)"/>
+      <path d="M62 170 L470 170" stroke="#e5462e" stroke-width="3" opacity=".9"/>
+      <rect x="232" y="150" width="22" height="4" rx="2" fill="#8d97a6"/>
+      <rect x="150" y="150" width="22" height="4" rx="2" fill="#8d97a6"/>
+      <path d="M448 156 Q462 158 466 166 L444 164 Z" fill="#fff4cc"/>
+      <path d="M57 150 L66 148 L66 164 L57 165 Z" fill="#ff3b30"/>
+      <g class="wheel" style="transform-origin:142px 196px">
+        <circle cx="142" cy="196" r="34" fill="#15181d"/><circle cx="142" cy="196" r="21" fill="#c9d0da"/>
+        <g stroke="#5c6572" stroke-width="5" stroke-linecap="round"><line x1="142" y1="178" x2="142" y2="214"/><line x1="124" y1="196" x2="160" y2="196"/><line x1="129" y1="183" x2="155" y2="209"/><line x1="155" y1="183" x2="129" y2="209"/></g>
+        <circle cx="142" cy="196" r="6" fill="#e5462e"/>
+      </g>
+      <g class="wheel" style="transform-origin:390px 196px">
+        <circle cx="390" cy="196" r="34" fill="#15181d"/><circle cx="390" cy="196" r="21" fill="#c9d0da"/>
+        <g stroke="#5c6572" stroke-width="5" stroke-linecap="round"><line x1="390" y1="178" x2="390" y2="214"/><line x1="372" y1="196" x2="408" y2="196"/><line x1="377" y1="183" x2="403" y2="209"/><line x1="403" y1="183" x2="377" y2="209"/></g>
+        <circle cx="390" cy="196" r="6" fill="#e5462e"/>
+      </g>
+    </g>
+  </svg>
+  <div class="hp-chip"><b>160 л.с.</b> — порог льготы</div>
+</div>
 </section>
 <div class="grid2">
 <form id="calc" class="card" novalidate>

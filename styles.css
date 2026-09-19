@@ -88,3 +88,32 @@ details summary { font-weight: 700; cursor: pointer; }
 footer.bottom { margin-top: 48px; padding: 24px 0 40px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 footer.bottom a { color: var(--muted); }
 footer.bottom .links { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+
+/* ---------- Главный экран с машиной ---------- */
+.hero-home { display: grid; grid-template-columns: 1.05fr 1fr; gap: 24px; align-items: center; }
+.hero-home .btn { margin-top: 18px; }
+@media (max-width: 860px) { .hero-home { grid-template-columns: 1fr; } .car-scene { order: -1; } }
+.car-scene { position: relative; background: radial-gradient(120% 90% at 70% 20%, #fff 0%, #eef1f5 60%, #e4e8ee 100%); border: 1px solid var(--line); border-radius: 20px; padding: 18px 12px 8px; overflow: hidden; }
+.car-scene svg { display: block; width: 100%; height: auto; }
+.route { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; justify-content: center; font-size: 15px; color: var(--muted); margin-bottom: 4px; }
+.route-words { position: relative; display: inline-block; height: 1.5em; min-width: 7.5em; overflow: hidden; vertical-align: bottom; }
+.route-words b { position: absolute; left: 0; right: 0; text-align: center; color: var(--accent); opacity: 0; animation: word 9s infinite; }
+.route-words b:nth-child(2) { animation-delay: 3s; }
+.route-words b:nth-child(3) { animation-delay: 6s; }
+@keyframes word { 0% { opacity: 0; transform: translateY(100%); } 4%, 30% { opacity: 1; transform: none; } 34%, 100% { opacity: 0; transform: translateY(-100%); } }
+.hp-chip { position: absolute; top: 56px; right: 14px; background: var(--ink); color: #fff; font-size: 13px; padding: 6px 10px; border-radius: 999px; box-shadow: 0 6px 18px rgba(0,0,0,.15); animation: float 4s ease-in-out infinite; }
+.hp-chip b { color: #ffb4a6; }
+.dashes rect { fill: #aab3bf; }
+.dashes { animation: road .7s linear infinite; }
+@keyframes road { to { transform: translateX(-90px); } }
+.wheel { animation: spin .6s linear infinite; }
+@keyframes spin { to { transform: rotate(-360deg); } }
+.car { animation: bob .5s ease-in-out infinite alternate; }
+@keyframes bob { to { transform: translateY(1.5px); } }
+.beam { animation: beam 3s ease-in-out infinite; }
+@keyframes beam { 0%, 100% { opacity: .55; } 50% { opacity: .95; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@media (prefers-reduced-motion: reduce) {
+  .dashes, .wheel, .car, .beam, .hp-chip { animation: none; }
+  .route-words b { animation: none; opacity: 0; } .route-words b:first-child { opacity: 1; }
+}
