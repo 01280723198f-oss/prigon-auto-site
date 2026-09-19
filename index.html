@@ -52,26 +52,38 @@
       <rect x="0" y="228" width="520" height="4" rx="2" fill="#d7dce3"/>
       <g class="dashes"><rect x="0" y="244" width="40" height="4" rx="2"/><rect x="90" y="244" width="40" height="4" rx="2"/><rect x="180" y="244" width="40" height="4" rx="2"/><rect x="270" y="244" width="40" height="4" rx="2"/><rect x="360" y="244" width="40" height="4" rx="2"/><rect x="450" y="244" width="40" height="4" rx="2"/><rect x="540" y="244" width="40" height="4" rx="2"/><rect x="630" y="244" width="40" height="4" rx="2"/></g>
     </g>
-    <ellipse cx="265" cy="226" rx="230" ry="12" fill="url(#shadow)"/>
+    <ellipse cx="265" cy="227" rx="235" ry="12" fill="url(#shadow)"/>
     <g class="car">
-      <path class="beam" d="M466 158 L520 138 L520 188 Z" fill="url(#beam)"/>
-      <path d="M58 196 L56 158 Q58 140 78 132 L118 116 Q140 106 170 104 L292 100 Q312 100 326 110 L372 140 L446 150 Q466 154 470 170 L472 190 Q472 196 464 196 L434 196 A44 44 0 0 0 346 196 L186 196 A44 44 0 0 0 98 196 Z" fill="url(#body)"/>
-      <path d="M118 124 Q140 112 172 110 L204 109 L204 142 L110 142 Q108 132 118 124 Z" fill="url(#glass)"/>
-      <path d="M212 108 L288 106 Q304 106 316 114 L352 140 L212 142 Z" fill="url(#glass)"/>
-      <path d="M62 170 L470 170" stroke="#e5462e" stroke-width="3" opacity=".9"/>
-      <rect x="232" y="150" width="22" height="4" rx="2" fill="#8d97a6"/>
-      <rect x="150" y="150" width="22" height="4" rx="2" fill="#8d97a6"/>
-      <path d="M448 156 Q462 158 466 166 L444 164 Z" fill="#fff4cc"/>
-      <path d="M57 150 L66 148 L66 164 L57 165 Z" fill="#ff3b30"/>
-      <g class="wheel" style="transform-origin:142px 196px">
-        <circle cx="142" cy="196" r="34" fill="#15181d"/><circle cx="142" cy="196" r="21" fill="#c9d0da"/>
-        <g stroke="#5c6572" stroke-width="5" stroke-linecap="round"><line x1="142" y1="178" x2="142" y2="214"/><line x1="124" y1="196" x2="160" y2="196"/><line x1="129" y1="183" x2="155" y2="209"/><line x1="155" y1="183" x2="129" y2="209"/></g>
-        <circle cx="142" cy="196" r="6" fill="#e5462e"/>
+      <path class="beam" d="M470 142 L520 124 L520 170 Z" fill="url(#beam)"/>
+      <!-- кузов кроссовера: высокий клиренс, ровная крыша, вертикальная пятая дверь -->
+      <path d="M62 182 L58 150 L60 122 Q64 106 82 94 Q94 86 116 85 L288 82 Q300 82 308 88 L358 126 L446 134 Q466 136 470 150 L472 174 Q472 182 464 182 L433 182 A48 48 0 0 0 337 182 L188 182 A48 48 0 0 0 92 182 Z" fill="url(#body)"/>
+      <!-- рейлинги -->
+      <g fill="#8d97a6"><rect x="118" y="77" width="164" height="4" rx="2"/><rect x="124" y="79" width="6" height="7" rx="1"/><rect x="272" y="78" width="6" height="7" rx="1"/></g>
+      <!-- окна -->
+      <path d="M72 124 L80 108 Q88 97 106 94 L168 92 L168 124 Z" fill="url(#glass)"/>
+      <path d="M176 92 L248 90 L248 124 L176 124 Z" fill="url(#glass)"/>
+      <path d="M256 90 L288 89 Q298 89 304 95 L336 124 L256 124 Z" fill="url(#glass)"/>
+      <!-- зеркало -->
+      <path d="M322 118 L336 114 L338 124 L324 125 Z" fill="#1b2029"/>
+      <!-- молдинг и ручки -->
+      <path d="M60 146 L470 146" stroke="#e5462e" stroke-width="3" opacity=".9"/>
+      <rect x="150" y="134" width="22" height="4" rx="2" fill="#8d97a6"/>
+      <rect x="262" y="134" width="22" height="4" rx="2" fill="#8d97a6"/>
+      <!-- пластиковые накладки: арки и пороги -->
+      <path d="M92 182 A48 48 0 0 1 188 182 M337 182 A48 48 0 0 1 433 182" fill="none" stroke="#0b0d10" stroke-width="8"/>
+      <path d="M188 176 L337 176 L337 184 L188 184 Z M60 172 L92 172 L92 182 L62 182 Z M433 172 L470 172 L468 182 L433 182 Z" fill="#0b0d10"/>
+      <!-- фары -->
+      <path d="M436 138 Q458 139 468 145 L442 146 Z" fill="#fff4cc"/>
+      <path d="M59 124 L68 120 L68 138 L58 138 Z" fill="#ff3b30"/>
+      <g class="wheel" style="transform-origin:140px 190px">
+        <circle cx="140" cy="190" r="38" fill="#14171c"/><circle cx="140" cy="190" r="31" fill="#23272e"/><circle cx="140" cy="190" r="25" fill="#c9d0da"/>
+        <g stroke="#5c6572" stroke-width="6" stroke-linecap="round"><line x1="140" y1="169" x2="140" y2="183"/><line x1="160" y1="184" x2="147" y2="188"/><line x1="152" y1="207" x2="144" y2="196"/><line x1="128" y1="207" x2="136" y2="196"/><line x1="120" y1="184" x2="133" y2="188"/></g>
+        <circle cx="140" cy="190" r="7" fill="#e5462e"/>
       </g>
-      <g class="wheel" style="transform-origin:390px 196px">
-        <circle cx="390" cy="196" r="34" fill="#15181d"/><circle cx="390" cy="196" r="21" fill="#c9d0da"/>
-        <g stroke="#5c6572" stroke-width="5" stroke-linecap="round"><line x1="390" y1="178" x2="390" y2="214"/><line x1="372" y1="196" x2="408" y2="196"/><line x1="377" y1="183" x2="403" y2="209"/><line x1="403" y1="183" x2="377" y2="209"/></g>
-        <circle cx="390" cy="196" r="6" fill="#e5462e"/>
+      <g class="wheel" style="transform-origin:385px 190px">
+        <circle cx="385" cy="190" r="38" fill="#14171c"/><circle cx="385" cy="190" r="31" fill="#23272e"/><circle cx="385" cy="190" r="25" fill="#c9d0da"/>
+        <g stroke="#5c6572" stroke-width="6" stroke-linecap="round"><line x1="385" y1="169" x2="385" y2="183"/><line x1="405" y1="184" x2="392" y2="188"/><line x1="397" y1="207" x2="389" y2="196"/><line x1="373" y1="207" x2="381" y2="196"/><line x1="365" y1="184" x2="378" y2="188"/></g>
+        <circle cx="385" cy="190" r="7" fill="#e5462e"/>
       </g>
     </g>
   </svg>
