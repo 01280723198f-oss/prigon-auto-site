@@ -179,3 +179,9 @@
     if (window.ym && SITE.metrikaId) try { ym(SITE.metrikaId, 'reachGoal', goal); } catch (e) {}
   }
 })();
+
+// Видео машины: при «уменьшить движение» — стоп на первом кадре (кадр-обложка остаётся).
+(function () {
+  var v = document.querySelector('video.car-media');
+  if (v && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+})();

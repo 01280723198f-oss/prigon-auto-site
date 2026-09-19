@@ -38,69 +38,10 @@
  
 <div class="car-scene" aria-hidden="true">
   <div class="route"><span>Везём</span><span class="route-words"><b>из Китая</b><b>из Кореи</b><b>из Японии</b></span><span>→ до вашего города</span></div>
-  <svg viewBox="0 0 520 300" role="img">
-    <defs>
-      <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#f4f6f9"/><stop offset=".45" stop-color="#c3cad4"/><stop offset=".7" stop-color="#8a93a0"/><stop offset="1" stop-color="#5b636f"/>
-      </linearGradient>
-      <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#3a4658"/><stop offset=".6" stop-color="#141a24"/><stop offset="1" stop-color="#0b0f16"/>
-      </linearGradient>
-      <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
-        <stop offset="0" stop-color="#000" stop-opacity=".7"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
-      </radialGradient>
-      <radialGradient id="spot" cx=".5" cy="0" r=".9">
-        <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-      </radialGradient>
-      <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/>
-      </linearGradient>
-      <mask id="reflect"><rect x="0" y="228" width="520" height="80" fill="url(#fade)"/></mask>
-      <radialGradient id="beam" cx="0" cy=".5" r="1">
-        <stop offset="0" stop-color="#fff6d6" stop-opacity=".9"/><stop offset="1" stop-color="#fff6d6" stop-opacity="0"/>
-      </radialGradient>
-    </defs>
-    <g class="road">
-      <rect x="0" y="228" width="520" height="1.5" fill="#3a414d"/>
-      <g class="dashes"><rect x="0" y="244" width="40" height="4" rx="2"/><rect x="90" y="244" width="40" height="4" rx="2"/><rect x="180" y="244" width="40" height="4" rx="2"/><rect x="270" y="244" width="40" height="4" rx="2"/><rect x="360" y="244" width="40" height="4" rx="2"/><rect x="450" y="244" width="40" height="4" rx="2"/><rect x="540" y="244" width="40" height="4" rx="2"/><rect x="630" y="244" width="40" height="4" rx="2"/></g>
-    </g>
-    <ellipse cx="265" cy="227" rx="235" ry="12" fill="url(#shadow)"/>
-    <g class="car" id="carg">
-      <path class="beam" d="M470 142 L520 124 L520 170 Z" fill="url(#beam)"/>
-      <!-- кузов кроссовера: высокий клиренс, ровная крыша, вертикальная пятая дверь -->
-      <path d="M62 182 L58 150 L60 122 Q64 106 82 94 Q94 86 116 85 L288 82 Q300 82 308 88 L358 126 L446 134 Q466 136 470 150 L472 174 Q472 182 464 182 L433 182 A48 48 0 0 0 337 182 L188 182 A48 48 0 0 0 92 182 Z" fill="url(#body)"/>
-      <!-- рейлинги -->
-      <g fill="#2a2f37"><rect x="118" y="77" width="164" height="4" rx="2"/><rect x="124" y="79" width="6" height="7" rx="1"/><rect x="272" y="78" width="6" height="7" rx="1"/></g>
-      <!-- окна -->
-      <path d="M72 124 L80 108 Q88 97 106 94 L168 92 L168 124 Z" fill="url(#glass)"/>
-      <path d="M176 92 L248 90 L248 124 L176 124 Z" fill="url(#glass)"/>
-      <path d="M256 90 L288 89 Q298 89 304 95 L336 124 L256 124 Z" fill="url(#glass)"/>
-      <!-- зеркало -->
-      <path d="M322 118 L336 114 L338 124 L324 125 Z" fill="#6d7582"/>
-      <!-- молдинг и ручки -->
-      <path d="M60 146 L470 146" stroke="#e5462e" stroke-width="2.5"/>
-      <rect x="150" y="134" width="22" height="4" rx="2" fill="#6d7582"/>
-      <rect x="262" y="134" width="22" height="4" rx="2" fill="#6d7582"/>
-      <!-- пластиковые накладки: арки и пороги -->
-      <path d="M92 182 A48 48 0 0 1 188 182 M337 182 A48 48 0 0 1 433 182" fill="none" stroke="#0b0d10" stroke-width="8"/>
-      <path d="M188 176 L337 176 L337 184 L188 184 Z M60 172 L92 172 L92 182 L62 182 Z M433 172 L470 172 L468 182 L433 182 Z" fill="#0b0d10"/>
-      <!-- фары -->
-      <path d="M436 138 Q458 139 468 145 L442 146 Z" fill="#fff4cc"/>
-      <path d="M59 124 L68 120 L68 138 L58 138 Z" fill="#ff3b30"/>
-      <g class="wheel" style="transform-origin:140px 190px">
-        <circle cx="140" cy="190" r="38" fill="#14171c"/><circle cx="140" cy="190" r="31" fill="#23272e"/><circle cx="140" cy="190" r="25" fill="#c9d0da"/>
-        <g stroke="#5c6572" stroke-width="6" stroke-linecap="round"><line x1="140" y1="169" x2="140" y2="183"/><line x1="160" y1="184" x2="147" y2="188"/><line x1="152" y1="207" x2="144" y2="196"/><line x1="128" y1="207" x2="136" y2="196"/><line x1="120" y1="184" x2="133" y2="188"/></g>
-        <circle cx="140" cy="190" r="7" fill="#e5462e"/>
-      </g>
-      <g class="wheel" style="transform-origin:385px 190px">
-        <circle cx="385" cy="190" r="38" fill="#14171c"/><circle cx="385" cy="190" r="31" fill="#23272e"/><circle cx="385" cy="190" r="25" fill="#c9d0da"/>
-        <g stroke="#5c6572" stroke-width="6" stroke-linecap="round"><line x1="385" y1="169" x2="385" y2="183"/><line x1="405" y1="184" x2="392" y2="188"/><line x1="397" y1="207" x2="389" y2="196"/><line x1="373" y1="207" x2="381" y2="196"/><line x1="365" y1="184" x2="378" y2="188"/></g>
-        <circle cx="385" cy="190" r="7" fill="#e5462e"/>
-      </g>
-    </g>
-    <g mask="url(#reflect)"><use href="#carg" transform="translate(0 456) scale(1 -1)"/></g>
-  </svg>
-  <div class="hp-chip"><b>160 л.с.</b> — порог льготы</div>
+  <div class="stage">
+    <video class="car-media" autoplay muted loop playsinline preload="metadata" poster="/media/car.jpg"><source src="/media/car.mp4" type="video/mp4"></video>
+    <div class="hp-chip"><b>160 л.с.</b> — порог льготы</div>
+  </div>
 </div>
 </section></div>
 
