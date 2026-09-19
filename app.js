@@ -138,7 +138,7 @@
 
       var data = {
         country: f.country.value, car: f.car.value, budget: f.budget.value,
-        city: f.city.value, timing: f.timing.value, name: f.name.value, phone: '+' + digits,
+        city: f.city.value, timing: f.timing.value, payment: f.payment.value, name: f.name.value, phone: '+' + digits,
         calc: f.calc.value || null,
         consent_pd: f.consent_pd.checked, consent_transfer: f.consent_transfer.checked,
         consent_ads: f.consent_ads.checked, consent_version: SITE.consentVersion,
