@@ -192,11 +192,3 @@ footer.bottom .links { display: flex; gap: 10px 22px; flex-wrap: wrap; margin-bo
           mask-composite: intersect; }
 .stage .hp-chip { top: 10px; right: 10px; }
 
-/* ---------- Этапы оплаты ---------- */
-.pay-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 12px; }
-@media (max-width: 1000px) { .pay-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .pay-grid { grid-template-columns: 1fr; } }
-.pay-step { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow-sm); }
-.pay-step span { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 800; font-size: 14px; }
-.pay-step h3 { font-size: 17px; margin: 12px 0 6px; }
-.pay-step p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.5; }
